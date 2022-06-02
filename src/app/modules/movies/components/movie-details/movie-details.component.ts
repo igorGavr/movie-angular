@@ -15,14 +15,11 @@ export class MovieDetailsComponent implements OnInit {
   movieDetails: Movie;
   constructor(private movieService: MovieService,
               private activatedRoute: ActivatedRoute) {
-    this.activatedRoute.params.subscribe(res => {
-      this.movieDetails = ['res']
-      this.imageOriginal = `${urls.ImageOriginalUrl}${this.movieDetails.backdrop_path}`;
-      this.imagePreview = `${urls.ImageLogoUrl}${this.movieDetails.poster_path}`
-    })
+
   }
 
   ngOnInit(): void {
+
   }
 
 }

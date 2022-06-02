@@ -5,13 +5,15 @@ import {MoviesRoutingModule} from "./movies-routing.module";
 import {HTTP_INTERCEPTORS} from "@angular/common/http";
 import {MainTokenInterceptor} from "../../services/main-token.interceptor";
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
+import { MovieComponent } from './components/movie/movie.component';
 
 
 
 @NgModule({
   declarations: [
     MoviesComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    MovieComponent
   ],
   imports: [
     CommonModule,
